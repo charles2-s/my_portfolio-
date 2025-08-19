@@ -10,7 +10,7 @@
         body{
             
             background-image: url("bck.jpeg");
-            font-size:=3em;
+            font-size:3em;
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -25,11 +25,11 @@
 
 .card{
    
-    background-color:grey;
+    background-color:rgba(0,0,0,0.6);
     
-    width:100%;
-    border-radius: 45px;
-    margin:0 auto;
+    width:90%;
+    border-radius: 25px;
+    margin:0 auto 30px auto ;
     padding: 60px;
 font-weight:bold;
 box-sizing: border-box;
@@ -66,6 +66,14 @@ img{border-radius: 30px;
         height: 100%;
     
       }
+.card img {
+    border-radius: 30px;
+    animation: popin 1s ease-in-out;
+    max-width: 100%; /* image will shrink to card width */
+    height: auto; /* maintain aspect ratio */
+    display: block;
+    margin: 0 auto 20px auto; /* center the image with some space below */
+}
     </style>
     </head>
 <body>
@@ -74,9 +82,9 @@ img{border-radius: 30px;
     
 
     <img
-src="profile.jpg" width="300px" height="350px">
+src="profile.jpg">
  
-    <h2><i>charles ager🐉🐉</i></icharles></h2>
+    <h2><i>charles ager🐉🐉</i></h2>
     <p>hello am charle ager and am learning html,css</p>
     <button type="button"
     onclick="document.getElementById('demo').innerHTML=Date()">clk date</button>
